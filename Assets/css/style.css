@@ -100,15 +100,19 @@ a:hover {
 }
 
 .div6 {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     background: white;
-    padding: 15px;
     margin-left: 10px;
     top: 10px;
-    border-radius: 100%;
-    align-items: center;
+    border-radius: 50%;
+
+}
+
+.div6 span {
+    display: inline-block;
+    transform: translatey(80%);
 
 }
 
@@ -268,7 +272,6 @@ div span {
 }
 
 .block5 {
-    display: flex;
     max-width: 1200px;
     height: auto;
     margin: auto;
@@ -360,11 +363,10 @@ div span {
 }
 
 .block7 {
-   text-align: center;
     margin: 50px;
     background-color: black;
     color: #c1c9c9;
-    padding: 50px;
+    padding: 40px;
 }
 
 .flex {
@@ -375,6 +377,13 @@ div span {
 .block7 span {
     color: #cbc9c9;
 }
+
+.icons {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
 
 .div18 {
     width: 50%;
@@ -387,7 +396,7 @@ div span {
 }
 
 .div18 input {
-    width: 90%;
+    width: 85%;
     background-color: white;
     color: gray;
     padding: 10px;
@@ -404,9 +413,10 @@ div span {
 
 .div19 p {
     display: block;
-    width: 90%;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 70%;
+    margin:auto;
     border-top: 1px solid #eeeeee;
+    text-align: center;
+    padding-top: 15px;
 
 }
