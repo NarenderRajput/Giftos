@@ -12,6 +12,55 @@ img {
     margin-top: 20px;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.sm-menu {
+    display: none;
+    float: right;
+    text-align: center;
+}
+
+.buttonn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.sm-content {
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: #f9ece6;;
+    min-width: 725px;
+    z-index: 1;
+    right: -10px;
+    margin: 10px;
+}
+
+.sm-content a {
+    color: black;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.sm-content a:hover {
+    background-color: #f9ece6;
+}
+
+.dropdown:hover .sm-content {
+    display: block;
+}
+
 .div1  {
     background-color: #f9ece6;
     padding: 20px;
@@ -24,11 +73,13 @@ img {
 .block {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     height: 700px;
     margin: 0px 20px;
     clear: both;
     background-color: #f89cab;
     border-radius: 0px 0px 10px 10px;
+    overflow: auto;
 }
 
 .div1 a {
@@ -44,7 +95,7 @@ a:hover {
 }
 
 .div2 {
-    width: 600px;
+    width: 55%;
     margin-top: 150px;
     text-align: left;
     color: white;
@@ -82,20 +133,21 @@ a:hover {
 .block1 {
     display: flex;
     justify-content: center;
-    gap: 25px;
     flex-wrap: wrap;
+    gap: 25px;
+    
 }
 
 .div5 {
     position: relative;
-    width: 250px;
-    height: auto;
+    width: 22%;
     background-color: #eeeeee;
     text-align: center;
 }
 
 .div5 img {
     width: 120px;
+    height: 180px;
     padding: 50px;
 }
 
@@ -154,6 +206,7 @@ a:hover {
 .block2 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #7fd7eb;
     color: white;
     text-align: left;
@@ -191,7 +244,9 @@ a:hover {
     font-size: 18px;
     border: none;
     color: black;
+    background-color: #ffffff;
     padding: 15px 50px;
+    
 }
 
 .div11 .button:hover {
@@ -214,12 +269,13 @@ div span {
 .block3 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     
 }
 
 .div12 {
-    width: 300px;
+    width: 25%;
     padding: 15px;
     margin: 20px;
     background-color: #f9f8f7;
@@ -229,7 +285,6 @@ div span {
 }
 
 .block4 {
-    max-width: 1400px;
     height: auto;
     margin: 40px;
     padding: 20px;
@@ -272,7 +327,7 @@ div span {
 }
 
 .block5 {
-    max-width: 1200px;
+    width: 85%;
     height: auto;
     margin: auto;
     overflow: auto;
@@ -287,6 +342,7 @@ div span {
 .block5 .shadow {
     box-shadow: rgb(59, 58, 58) 3px 3px 10px;
     display: flex;
+    flex-wrap: wrap;
     height: auto;
     margin: auto;
     margin-bottom: 20px;
@@ -296,8 +352,11 @@ div span {
     width: 50%;
 }
 
+.div15 img {
+    height: 100%;
+}
 .div16 {
-    width: 50%;
+    width: 45%;
     height: auto;
     padding: 15px;
     text-align: center;
@@ -336,7 +395,7 @@ div span {
 }
 
 .block6 {
-    max-width: 1000px;
+    max-width: 75%;
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
@@ -364,7 +423,7 @@ div span {
 
 .block7 {
     margin: 50px;
-    background-color: black;
+    background-color: #212934;
     color: #c1c9c9;
     padding: 40px;
 }
@@ -372,6 +431,7 @@ div span {
 .flex {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .block7 span {
@@ -386,7 +446,7 @@ div span {
 
 
 .div18 {
-    width: 50%;
+    width: 23%;
     margin-right: 30px;
     font-size: 18px;
 }
@@ -396,7 +456,7 @@ div span {
 }
 
 .div18 input {
-    width: 85%;
+    width: 100%;
     background-color: white;
     color: gray;
     padding: 10px;
@@ -419,4 +479,111 @@ div span {
     text-align: center;
     padding-top: 15px;
 
+}
+
+@media only screen and (max-width:992px) {
+    
+    .block1 {
+        padding: 20px;
+    }
+    
+    .div10 {
+        width: 51%;
+    }
+
+    .div11 {
+        width: 51%;
+    }
+
+    .div18 {
+        width: 21%;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    
+    .div {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .div1 {
+        display: none;
+    }
+
+    .sm-menu {
+        display: inline-block !important;
+    }
+
+    .div5 {
+        width: 30%;
+    }
+
+    .div18 {
+        width: 43%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .block {
+        width: 100%;
+        height: 100%;
+    }
+
+    .div2 {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .div3 {
+        width: 40%;
+        height: auto;
+        margin: 0;
+    }
+
+    .div5 {
+        width: 45%;
+    }
+
+    .div10 {
+        width: 90%;
+    }
+
+    .div11 {
+        width: 90%;
+    }
+
+    .div12 {
+        width: 75%;
+    }
+
+    .div13 {
+        width: 90%;
+        float: none;
+    }
+
+    .div14 {
+        width: 90%;
+        float: none;
+    }
+
+    .div15 {
+        width: 100%;
+    }
+
+    .div16 {
+        width: 100%;
+    }
+
+    .div18 {
+        width: 95%;
+        line-height: 1.5;
+    }
 }
