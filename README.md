@@ -20,5 +20,5 @@ https://narenderrajput.github.io/Giftos/
 
 # Screenshot
 
-![Screenshot](./Giftos.png
+![Screenshot](./Giftos.png)
 ![Screenshot](./Giftos%20Responsive.png)
